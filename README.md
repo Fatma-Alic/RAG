@@ -56,10 +56,13 @@ After running one or more of these approaches, use [`prompts/`](./prompts/) to c
 # Overview of the Used Datasets and Resources
 
 | Dataset | Description | Availability |
+|---|---|---|
 | [`Alpha-ID_dataset/`](./data/Alpha-ID_dataset/) | BfArM terminology resource based on the Alphabetical Index of ICD-10-GM. It provides German diagnosis terms and corresponding ICD-10-GM codes. Used as a training dataset | Publicly available from BfArM. Subject to the [BfArM download conditions](https://www.bfarm.de/SharedDocs/Downloads/DE/Kodiersysteme/downloadbedingungen-2025.pdf?__blob=publicationFile). |
 | [`ICD10_GM/`](./data/ICD10_GM/) | German Modification of ICD-10 provided by BfArM for diagnosis coding in Germany. Used for prompt construction. | Publicly available from BfArM. Subject to the [BfArM download conditions](https://www.bfarm.de/SharedDocs/Downloads/DE/Kodiersysteme/downloadbedingungen-2025.pdf?__blob=publicationFile). |
 | `ICD-O-3` | International Classification of Diseases for Oncology, Third Edition. The German version is provided by BfArM. | Publicly available from BfArM: [BfArM ICD-O-3](https://www.bfarm.de/DE/Kodiersysteme/Klassifikationen/ICD/ICD-O-3/_node.html). Subject to the [BfArM download conditions](https://www.bfarm.de/SharedDocs/Downloads/DE/Kodiersysteme/downloadbedingungen-2025.pdf?__blob=publicationFile). |
-| [`ICDO3_LE_dataset/`](./data/ICDO3_LE_dataset/) | Derived ICD-O-3 topography dataset created in this project by linking Alpha-ID diagnosis descriptions, ICD-10-GM codes, ICD-O-3 topography codes, and ICD-O-to-ICD-10 mapping information. | Used as a training dataset and for prompt construction | Created in this project. |
+| [`ICDO3_LE_dataset/`](./data/ICDO3_LE_dataset/) | Derived ICD-O-3 topography dataset created in this project by linking Alpha-ID diagnosis descriptions, ICD-10-GM codes, ICD-O-3 topography codes, and ICD-O-to-ICD-10 mapping information. Used as a training dataset and for prompt construction | Created in this project. |
+
+---
 
 # Characteristics of the ICD-O-3 LE dataset
 
@@ -68,6 +71,7 @@ After running one or more of these approaches, use [`prompts/`](./prompts/) to c
 **Short description:** This dataset contains 8,981 tumor-related entries in CSV format for tumor coding and code-mapping tasks.
 
 The dataset was created by mapping Alpha-ID diagnosis descriptions to corresponding ICD-O-3 topography codes and ICD-10-GM codes using the conversion table for solid tumors.
+
 ---
 
 ## Dataset Contents
